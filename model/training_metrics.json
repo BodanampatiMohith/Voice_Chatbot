@@ -1,0 +1,279 @@
+{
+  "dataset_samples": 720,
+  "intent_classes": 18,
+  "samples_per_intent": 40,
+  "split": {
+    "method": "stratified",
+    "train": 504,
+    "validation": 108,
+    "test": 108,
+    "ratios": "70/15/15"
+  },
+  "tokenizer_vocabulary_size": 645,
+  "augmentation": "one light synonym, function-word deletion, or please insertion per training utterance; validation/test unchanged",
+  "architecture": "Embedding(128) -> SpatialDropout1D(0.20) -> BiLSTM(96, return_sequences=True) -> GlobalMaxPool + GlobalAveragePool -> Dense(96, ReLU) -> Dropout(0.35) -> Softmax; categorical cross-entropy label smoothing 0.08",
+  "training_loss": 2.399672508239746,
+  "training_accuracy": 0.2261904776096344,
+  "validation_accuracy": 0.1574074074074074,
+  "epochs_completed": 12,
+  "best_validation_loss": 2.619337797164917,
+  "best_validation_loss_epoch": 3,
+  "neural_test": {
+    "accuracy": 0.18518518518518517,
+    "weighted_precision": 0.15276999688764395,
+    "weighted_recall": 0.18518518518518517,
+    "weighted_f1": 0.12734921659406784
+  },
+  "neural_classification_report": {
+    "admission": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "attendance": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "campus": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "contact": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "courses": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "examinations": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "faculty": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "fees": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "goodbye": {
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.7692307692307693,
+      "support": 6.0
+    },
+    "greeting": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "hostel": {
+      "precision": 0.0784313725490196,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.14035087719298245,
+      "support": 6.0
+    },
+    "library": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "placements": {
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "f1-score": 0.2857142857142857,
+      "support": 6.0
+    },
+    "scholarships": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "student_activities": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "thanks": {
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1-score": 0.9230769230769231,
+      "support": 6.0
+    },
+    "timetable": {
+      "precision": 0.1,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.17391304347826086,
+      "support": 6.0
+    },
+    "transport": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "accuracy": 0.18518518518518517,
+    "macro avg": {
+      "precision": 0.15276999688764398,
+      "recall": 0.1851851851851852,
+      "f1-score": 0.12734921659406784,
+      "support": 108.0
+    },
+    "weighted avg": {
+      "precision": 0.15276999688764395,
+      "recall": 0.18518518518518517,
+      "f1-score": 0.12734921659406784,
+      "support": 108.0
+    }
+  },
+  "baseline_test": {
+    "accuracy": 0.6944444444444444,
+    "weighted_precision": 0.7114197530864197,
+    "weighted_recall": 0.6944444444444444,
+    "weighted_f1": 0.691137566137566
+  },
+  "baseline_classification_report": {
+    "admission": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.9090909090909091,
+      "support": 6.0
+    },
+    "attendance": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1-score": 0.8571428571428571,
+      "support": 6.0
+    },
+    "campus": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "contact": {
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1-score": 0.75,
+      "support": 6.0
+    },
+    "courses": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "examinations": {
+      "precision": 0.4,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.36363636363636365,
+      "support": 6.0
+    },
+    "faculty": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "fees": {
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7272727272727273,
+      "support": 6.0
+    },
+    "goodbye": {
+      "precision": 0.6,
+      "recall": 0.5,
+      "f1-score": 0.5454545454545454,
+      "support": 6.0
+    },
+    "greeting": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "hostel": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.9090909090909091,
+      "support": 6.0
+    },
+    "library": {
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.8333333333333334,
+      "support": 6.0
+    },
+    "placements": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 6.0
+    },
+    "scholarships": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 6.0
+    },
+    "student_activities": {
+      "precision": 0.6,
+      "recall": 0.5,
+      "f1-score": 0.5454545454545454,
+      "support": 6.0
+    },
+    "thanks": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "timetable": {
+      "precision": 0.5555555555555556,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.6666666666666666,
+      "support": 6.0
+    },
+    "transport": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "accuracy": 0.6944444444444444,
+    "macro avg": {
+      "precision": 0.7114197530864197,
+      "recall": 0.6944444444444444,
+      "f1-score": 0.691137566137566,
+      "support": 108.0
+    },
+    "weighted avg": {
+      "precision": 0.7114197530864197,
+      "recall": 0.6944444444444444,
+      "f1-score": 0.691137566137566,
+      "support": 108.0
+    }
+  }
+}
