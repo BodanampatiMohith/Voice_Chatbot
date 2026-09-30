@@ -1,9 +1,15 @@
-streamlit==1.40.0
-tensorflow-cpu==2.16.2
-numpy==1.26.4
-scikit-learn==1.5.2
+streamlit==1.40.0; python_version < "3.14"
+streamlit==1.64.0; python_version >= "3.14"
+tensorflow-cpu==2.16.2; python_version < "3.14"
+tensorflow-cpu==2.22.0rc0; python_version >= "3.14"
+numpy==1.26.4; python_version < "3.14"
+numpy==2.5.3; python_version >= "3.14"
+scikit-learn==1.5.2; python_version < "3.14"
+scikit-learn==1.9.1; python_version >= "3.14"
 joblib==1.4.2
-matplotlib==3.9.2
+matplotlib==3.9.2; python_version < "3.14"
+matplotlib==3.11.2; python_version >= "3.14"
 vosk==0.3.45
 soundfile==0.12.1
-scipy==1.14.1
+scipy==1.14.1; python_version < "3.14"
+scipy==1.18.1; python_version >= "3.14"
